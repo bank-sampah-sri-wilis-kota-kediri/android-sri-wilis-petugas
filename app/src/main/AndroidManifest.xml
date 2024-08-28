@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_bank_sampah_sri_willis"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_bank_sampah_sri_willis_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BankSampahSriWilis"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.homepage.operation.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.EditCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.EditCatalogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.AddCatalogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.ManageCatalogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.ManageUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.operation.ManageCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.authorization.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.order.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.order.DetailOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.mutation.InputMutationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.settings.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.settings.ChangeProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.homepage.HomepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splashscreen.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.splashscreen.SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    </application>
+
+</manifest>
