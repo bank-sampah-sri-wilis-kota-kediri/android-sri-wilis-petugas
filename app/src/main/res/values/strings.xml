@@ -7,7 +7,7 @@
     <string name="tv_splashscreen1_desc">Ubah sampah jadi rupiah dengan cepat, aman, dan transparan hanya dengan beberapa klik</string>
     <string name="tv_splashscreen2_desc">Mencatat dan mengelola transaksi penjualan sampah menjadi lebih sederhana dan efisien</string>
     <string name="tv_splashscreen3_desc">Dapatkan laporan pemesanan dan laporan keuangan secara real-time.</string>
-    <string name="tv_title_login">Masuk Akun</string>
+    <string name="tv_title_login">Masuk Akun Petugas</string>
     <string name="tv_title_register">Daftar Akun</string>
     <string name="tv_title_form_email">Email</string>
     <string name="tv_title_form_password">Sandi</string>
@@ -89,8 +89,8 @@
     <string name="btn_daftar">Daftar</string>
     <string name="btn_dont_have_account">Belum Memiliki Akun</string>
     <string name="btn_have_account">Sudah Memiliki Akun</string>
-    <string name="btn_home">Beranda</string>
-    <string name="btn_order">Pesanan</string>
+    <string name="btn_home">Pesanan</string>
+    <string name="btn_order">Riwayat</string>
     <string name="btn_mutation">Mutasi</string>
     <string name="btn_settings">Pengaturan</string>
     <string name="btn_confirmation">Konfirmasi</string>
@@ -166,5 +166,8 @@
     <string name="tv_on_process">Sedang diproses</string>
     <string name="tv_category_process_success">Kategori berhasil ditambahkan!</string>
     <string name="tv_users_process_success">Pengguna berhasil diubah</string>
+    <string name="tv_home_list_pesanan">List Pesanan</string>
+    <string name="tv_home_today">Hari ini</string>
+    <string name="tv_detail_pesanan_title">Detail Data Pesanan</string>
 
 </resources>

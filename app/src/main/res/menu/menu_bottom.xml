@@ -8,17 +8,8 @@
     <item
 
         android:icon="@drawable/ic_menu2"
-        android:id="@+id/order"
+        android:id="@+id/riwayat"
         android:title="@string/btn_order"
-        />
-    <item
-        android:id="@+id/placeholder"
-        android:title=""
-        />
-    <item
-        android:id="@+id/mutation"
-        android:icon="@drawable/ic_menu3"
-        android:title="@string/btn_mutation"
         />
     <item
         android:icon="@drawable/ic_menu4"
