@@ -7,9 +7,8 @@ data class CardPesanan(
     val lat: String,
     val lng: String,
     val status_pesanan: String,
-
+    val alamat_nasabah: String,
     val nama_nasabah: String,
     val no_hp_nasabah: String,
-
     val total_berat: Double
 )

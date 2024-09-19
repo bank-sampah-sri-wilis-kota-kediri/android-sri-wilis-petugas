@@ -5,10 +5,12 @@
     <color name="blue_primary">#3572EF</color>
     <color name="blue_calm">#A7E6FF</color>
     <color name="blue_secondary">#3ABEF9</color>
+    <color name="blue_alice">#E9EBFB</color>
     <color name="green_teal">#74BBA3</color>
     <color name="blue_dark">#050C9C</color>
-    <color name="green_label">#59d975</color>
-    <color name="red_primary">#D95959</color>
+    <color name="green_label">#3ED760</color>
+    <color name="red_primary">#F43030</color>
+    <color name="yellow_primary">#FFEB3B</color>
     <color name="grey_primary">#8D8D8D</color>
     <color name="grey_light">#EBEBEB</color>
     <color name="grey_secondary">#BDBDBD</color>

@@ -34,7 +34,7 @@ class WelcomeActivity : AppCompatActivity() {
         lifecycleScope.launch {
             checkToken()
         }
-        }
+    }
 
     private fun navigateToSplash() {
         val intent = Intent(this, SplashScreenActivity::class.java)

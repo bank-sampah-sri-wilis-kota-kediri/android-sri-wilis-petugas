@@ -7,6 +7,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bs.sriwilispetugas.data.repository.modelhelper.CardPesanan
 import com.bs.sriwilispetugas.databinding.CardPesananBinding
@@ -33,7 +34,7 @@ class PesananAdapter(
                 val totalBerat = pesanan.total_berat
                 tvBeratTransaksi.text = totalBerat.toString()
 
-                tvNamaPesanan.text = pesanan.nama_nasabah ?: "Nama tidak ditemukan"
+                tvNamaPesanan.text = pesanan.nama_nasabah
 
                 root.setOnClickListener {
                     val intent = Intent(context, PesananDetailActivity::class.java)
@@ -43,25 +44,17 @@ class PesananAdapter(
                 btnMaps.setOnClickListener {
                     openMaps(pesanan.lat.toDouble(), pesanan.lng.toDouble())
                 }
-                btnApprove.setOnClickListener{
-                    listener.onApproveClick(pesanan.id_pesanan, "Selesai Diantar")
-                }
             }
         }
     }
 
     @SuppressLint("QueryPermissionsNeeded")
     private fun openMaps(lat: Double, lng: Double) {
-        val uri = Uri.parse("http://maps.google.com/maps?q=loc:$lat,$lng")
-        val intent = Intent(Intent.ACTION_VIEW, uri).apply {
-            setPackage("com.google.android.apps.maps")
-        }
-
-        if (intent.resolveActivity(context.packageManager) != null) {
-            context.startActivity(intent)
-        } else {
-            Toast.makeText(context, "Google Maps is not installed.", Toast.LENGTH_SHORT).show()
-        }
+        val latString = lat.toString()
+        val lngString = lng.toString()
+        val mapUri = Uri.parse("https://maps.google.com/maps?daddr=$latString,$lngString")
+        val intent = Intent(Intent.ACTION_VIEW, mapUri)
+        context.startActivity(intent)
     }
 
 

@@ -34,7 +34,8 @@ interface PesananSampahKeranjangDao {
        p.lat, 
        p.lng, 
        p.id_pesanan,
-       p.status_pesanan, 
+       p.status_pesanan,
+       n.alamat_nasabah, 
        SUM(ps.berat_perkiraan) AS total_berat
         FROM pesanan_sampah_keranjang_table AS p
         JOIN nasabah_table AS n ON p.id_nasabah = n.id
@@ -72,6 +73,7 @@ interface PesananSampahKeranjangDao {
        p.lat, 
        p.lng, 
        p.id_pesanan,
+       n.alamat_nasabah,
        p.status_pesanan, 
        SUM(ps.berat_perkiraan) AS total_berat
         FROM pesanan_sampah_keranjang_table AS p

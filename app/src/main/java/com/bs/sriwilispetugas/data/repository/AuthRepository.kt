@@ -16,7 +16,7 @@ class AuthRepository(
 
     suspend fun login(phone: String, password: String): Result<LoginResponseEntity> {
         return try {
-            val response = apiService.login(phone, password)
+            val response = apiService.login(no_hp_petugas = phone, password_petugas =  password)
             if (response.isSuccessful) {
                 val loginResponseDTO = response.body()
                 if (loginResponseDTO?.dataPetugas != null) {

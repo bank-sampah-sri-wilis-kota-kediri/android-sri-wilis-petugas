@@ -24,4 +24,24 @@ class HistoryViewModel(private val repository: MainRepository): ViewModel() {
     suspend fun syncData(): Result<Unit> {
         return repository.syncData()
     }
-}
+
+    fun filterData(filter: String) {
+            viewModelScope.launch {
+                _historyPesanans.postValue(Result.Loading)
+                val filteredData = when (val result = repository.getCombinedPesananData()) {
+                    is Result.Success -> {
+                        val filteredList = when (filter) {
+                            "selesai diantar" -> result.data.filter { it.status_pesanan.lowercase() == "selesai diantar" }
+                            "gagal" -> result.data.filter { it.status_pesanan.lowercase() == "gagal" }
+                            else -> result.data.filter {it.status_pesanan.lowercase() == "gagal" || it.status_pesanan.lowercase() == "selesai diantar"}
+                        }
+                        Result.Success(filteredList)
+                    }
+                    is Result.Error -> result
+                    Result.Loading -> result
+                }
+
+                _historyPesanans.postValue(filteredData)
+            }
+        }
+    }

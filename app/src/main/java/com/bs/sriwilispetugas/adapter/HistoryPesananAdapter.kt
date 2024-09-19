@@ -100,7 +100,7 @@ class HistoryPesananAdapter(
 
     @SuppressLint("NotifyDataSetChanged")
     fun updatePesanan(newPesanans: List<CardPesanan>) {
-        this.pesanans = newPesanans.filter { it.status_pesanan.lowercase(Locale.ROOT) == "selesai diantar" || it.status_pesanan.lowercase(Locale.ROOT) == "gagal"}
+        this.pesanans = newPesanans
         notifyDataSetChanged()
     }
 

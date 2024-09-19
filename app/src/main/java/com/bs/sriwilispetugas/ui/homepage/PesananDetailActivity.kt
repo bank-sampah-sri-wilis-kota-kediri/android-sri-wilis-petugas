@@ -78,6 +78,7 @@ class PesananDetailActivity : AppCompatActivity() {
                         binding.btnMapsDetailPesanan.setOnClickListener {
                             openMaps(detail.lat.toDouble(), detail.lng.toDouble())
                         }
+                        binding.tvAlamatDetailPesanan.text = detail.alamat_nasabah
 
 
                     }
@@ -158,9 +159,6 @@ class PesananDetailActivity : AppCompatActivity() {
             when (result) {
                 is Result.Success -> {
                     Toast.makeText(this, "Status berhasil diubah", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, HomepageActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
-                    startActivity(intent)
                     finish()
                 }
                 is Result.Error -> {
