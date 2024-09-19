@@ -169,5 +169,7 @@
     <string name="tv_home_list_pesanan">List Pesanan</string>
     <string name="tv_home_today">Hari ini</string>
     <string name="tv_detail_pesanan_title">Detail Data Pesanan</string>
+    <string name="alamat">Jl. Kebon Jeruk No. 12, Jakarta</string>
+    <string name="home_item">Home</string>
 
 </resources>

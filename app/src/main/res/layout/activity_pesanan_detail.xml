@@ -142,6 +142,30 @@
                         android:text="Buka Maps"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_tanggal_detail_pesanan" />
+
+                    <View
+                        android:id="@+id/line_separator"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/grey_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_maps_detail_pesanan" />
+
+                    <!-- Address TextView -->
+                    <TextView
+                        android:id="@+id/tv_alamat_detail_pesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/alamat"
+                        android:textColor="@color/grey_primary"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/line_separator" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 

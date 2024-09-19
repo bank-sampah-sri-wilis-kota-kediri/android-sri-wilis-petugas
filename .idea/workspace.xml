@@ -80,7 +80,18 @@
           <theme>@style/Theme.BankSampahSriWilis</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_summary.xml">
+        <config>
+          <state>Portrait</state>
+          <theme>@style/Theme.BankSampahSriWilis</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_bottom.xml">
+        <config>
+          <theme>@style/Theme.BankSampahSriWilis</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_filter_history.xml">
         <config>
           <theme>@style/Theme.BankSampahSriWilis</theme>
         </config>
@@ -92,116 +103,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0de00e-70ca-4b73-a470-b4c5b0acf445" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/history/HistoryFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_schedule.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_summary_white.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/bs/sriwilis/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/bs/sriwilispetugas/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/adapter/UserAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/network/ApiConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/network/ApiServiceAuth.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/network/ApiServiceMain.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/preference/TokenPreference.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/repository/AuthRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/repository/MainRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/response/AddCategoryRequest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/response/CategoryResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/response/GetAllUserResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/response/GetUserByIdResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/response/LoginResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/response/RegisterUserResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/data/response/TokenKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/helper/Injection.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/helper/Result.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/authorization/LoginActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/authorization/LoginViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/HomeFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/HomepageActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/AddCatalogActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/AddCategoryActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/AddUserActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/EditCatalogActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/EditCategoryActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/EditUserActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/ManageCatalogActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/ManageCatalogViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/ManageCategoryActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/ManageCategoryViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/ManageUserActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/homepage/operation/ManageUserViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/mutation/InputMutationActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/mutation/MutationFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/order/DetailOrderActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/order/OrderActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/order/OrderFailedFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/order/OrderFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/order/OrderSuccessFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/settings/ChangePasswordActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/settings/ChangeProfileActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/settings/SettingViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/settings/SettingsFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/settings/TransactionSettingsFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/splashscreen/SplashScreenActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/splashscreen/WelcomeActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/ui/splashscreen/WelcomeViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilis/utils/ViewModelFactory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_catalog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_category.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_user.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_password.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_order.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_order_failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_order_success.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_catalog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_category.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/adapter/HistoryPesananAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/adapter/HistoryPesananAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/adapter/PesananAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/adapter/PesananAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/network/ApiServiceAuth.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/network/ApiServiceAuth.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/repository/AuthRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/repository/AuthRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/repository/modelhelper/CardPesanan.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/repository/modelhelper/CardPesanan.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/room/dao/PesananSampahKeranjangDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/data/room/dao/PesananSampahKeranjangDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/authorization/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/authorization/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/history/HistoryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/history/HistoryFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/history/HistoryViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/history/HistoryViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/homepage/HomepageActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/homepage/HomepageActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/homepage/PesananDetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/homepage/PesananDetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/splashscreen/WelcomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs/sriwilispetugas/ui/splashscreen/WelcomeActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_homepage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_input_mutation.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_manage_category.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_manage_user.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_order.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_category_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_mutation_history.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_order.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_order_cart.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_user_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mutation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_order.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_order_failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_order_success.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_transaction_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pesanan_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pesanan_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_pesanan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_pesanan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_bottom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_bottom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/bs/sriwilis/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/bs/sriwilispetugas/ExampleUnitTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +148,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=R9RR201JTSP)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\izam\.android\avd\Pixel_3_XL_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -235,6 +172,7 @@
         <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -261,7 +199,7 @@
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/01. Perkuliahan/Magang/Android/android-sri-wilis-petugas/app/src/main/res/layout&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/01. Perkuliahan/Magang/Android/android-sri-wilis-user&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -278,6 +216,7 @@
       <recent name="com.bs.sriwilis.ui.homepage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\01. Perkuliahan\Magang\Android\android-sri-wilis-petugas\app\src\main\res\drawable" />
       <recent name="D:\01. Perkuliahan\Magang\Android\android-sri-wilis-petugas\app\src\main\res\layout" />
       <recent name="D:\01. Perkuliahan\Magang\Android\android-sri-wilis-petugas\app\src\main\java\com\bs\sriwilispetugas\data\room" />
     </key>

@@ -7,6 +7,7 @@ import com.bs.sriwilispetugas.R
 import com.bs.sriwilispetugas.databinding.ActivityHomepageBinding
 import com.bs.sriwilispetugas.ui.history.HistoryFragment
 import com.bs.sriwilispetugas.ui.settings.SettingsFragment
+import com.bs.sriwilispetugas.ui.summary.SummaryFragment
 
 class HomepageActivity : AppCompatActivity() {
 
@@ -20,11 +21,17 @@ class HomepageActivity : AppCompatActivity() {
         binding.bottomNavigationView.background = null
         binding.bottomNavigationView.menu.getItem(2).isEnabled = true
 
-        replaceFragment(HomeFragment())
+        replaceFragment(SummaryFragment())
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
+                    if (!isCurrentFragment(SummaryFragment::class.java)) {
+                        replaceFragment(SummaryFragment())
+                    }
+                    true
+                }
+                R.id.pesanan -> {
                     if (!isCurrentFragment(HomeFragment::class.java)) {
                         replaceFragment(HomeFragment())
                     }

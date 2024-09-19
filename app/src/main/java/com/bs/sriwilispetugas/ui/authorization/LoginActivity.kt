@@ -110,6 +110,7 @@ class LoginActivity : AppCompatActivity() {
                         setPositiveButton("OK") { _, _ ->
                             val intent = Intent(this@LoginActivity, HomepageActivity::class.java)
                             startActivity(intent)
+                            finish()
                         }
                         create()
                         show()
