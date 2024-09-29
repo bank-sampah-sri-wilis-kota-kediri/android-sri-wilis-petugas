@@ -22,8 +22,12 @@ class MainRepository(
     suspend fun logout() {
         withContext(Dispatchers.IO) {
             appDatabase.loginResponseDao().deleteAll()
+            appDatabase.pesananSampahkeranjangDao().deleteAllPesananSampahKeranjang()
+            appDatabase.pesananSampahDao().deleteAllPesananSampah()
+            appDatabase.nasabahDao().deleteAllNasabah()
         }
     }
+
 
     suspend fun getToken(): String? {
         val loginResponse = appDatabase.loginResponseDao().getLoginResponseById(1)
@@ -87,6 +91,7 @@ class MainRepository(
         return withContext(Dispatchers.IO) {
             try {
                 val combinedData = appDatabase.pesananSampahkeranjangDao().getCombinedPesananData()
+                Log.d("cek combined data", combinedData.toString())
                 Result.Success(combinedData)
             } catch (e: Exception) {
                 Result.Error("Error occurred: ${e.message}")
@@ -139,6 +144,10 @@ class MainRepository(
 
     suspend fun syncData(): Result<Unit> {
         return try {
+            appDatabase.pesananSampahkeranjangDao().deleteAllPesananSampahKeranjang()
+            appDatabase.pesananSampahDao().deleteAllPesananSampah()
+            appDatabase.nasabahDao().deleteAllNasabah()
+
             val pesananResult = getAllPesanan()
             if (pesananResult is Result.Error) {
                 return Result.Error("Failed to sync pesanan: ${pesananResult.error}")

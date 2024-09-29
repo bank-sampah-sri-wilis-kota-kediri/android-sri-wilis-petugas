@@ -1,5 +1,6 @@
 package com.bs.sriwilispetugas.ui.homepage
 
+import android.util.Log
 import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -22,6 +23,7 @@ class HomePageViewModel(private val repository: MainRepository): ViewModel() {
         viewModelScope.launch {
             _pesanans.postValue(Result.Loading)
             val result = repository.getCombinedPesananData()
+            Log.d("cek isi get combined data", result.toString())
             _pesanans.postValue(result)
         }
     }
