@@ -21,18 +21,6 @@
             android:name=".ui.authorization.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.order.OrderActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.order.DetailOrderActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.mutation.InputMutationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.settings.ChangePasswordActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.settings.ChangeProfileActivity"
             android:exported="false" />
         <activity

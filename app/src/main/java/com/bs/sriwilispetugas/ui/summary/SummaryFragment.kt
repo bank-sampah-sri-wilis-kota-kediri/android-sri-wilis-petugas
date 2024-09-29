@@ -48,7 +48,6 @@ class SummaryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
     }
 
 
@@ -57,8 +56,9 @@ class SummaryFragment : Fragment() {
             when (result) {
                 is Result.Success -> {
                     val data = result.data
+                    Log.d("cek isi data", data.toString())
 
-                    var jumlahCount = data.size
+                    var jumlahCount = data.count { it.status_pesanan.lowercase() != "pending" }
                     var perluDiantarCount = data.count { it.status_pesanan.lowercase() == "sudah dijadwalkan" }
                     var terkonfirmasiCount = data.count { it.status_pesanan.lowercase() == "selesai diantar" || it.status_pesanan.lowercase() == "gagal" }
                     var selesaiDiantarCount = data.count { it.status_pesanan.lowercase() == "selesai diantar" }

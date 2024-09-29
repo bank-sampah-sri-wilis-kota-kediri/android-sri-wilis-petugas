@@ -43,5 +43,5 @@ class HistoryViewModel(private val repository: MainRepository): ViewModel() {
 
                 _historyPesanans.postValue(filteredData)
             }
-        }
     }
+}

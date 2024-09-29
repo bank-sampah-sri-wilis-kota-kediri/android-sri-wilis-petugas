@@ -24,6 +24,7 @@ import com.bs.sriwilispetugas.ui.homepage.HomePageViewModel
 import com.bs.sriwilispetugas.utils.ViewModelFactory
 import kotlinx.coroutines.launch
 
+@Suppress("DEPRECATION")
 class HistoryFragment : Fragment() {
 
     private var _binding: FragmentHistoryBinding? = null
@@ -56,14 +57,13 @@ class HistoryFragment : Fragment() {
                 viewModel.getCombinedPesananData()
             }
         }
+        viewModel.filterData("semua")
 
         observeViewModel()
 
         binding.menuIcon.setOnClickListener {
             showPopupMenu(binding.menuIcon)
         }
-
-        viewModel.filterData("semua")
 
         return binding.root
     }

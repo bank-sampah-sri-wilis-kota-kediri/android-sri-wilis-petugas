@@ -100,21 +100,23 @@ class LoginActivity : AppCompatActivity() {
                     binding.progressBar.visibility = View.VISIBLE
                 }
                 is Result.Success -> {
-                    binding.progressBar.visibility = View.GONE
+
                     lifecycleScope.launch {
                         welcomeViewModel.syncData()
-                    }
-                    AlertDialog.Builder(this).apply {
-                        setTitle("Sukses")
-                        setMessage("Anda Berhasil Masuk")
-                        setPositiveButton("OK") { _, _ ->
-                            val intent = Intent(this@LoginActivity, HomepageActivity::class.java)
-                            startActivity(intent)
-                            finish()
+                        binding.progressBar.visibility = View.GONE
+                        AlertDialog.Builder(this@LoginActivity).apply {
+                            setTitle("Sukses")
+                            setMessage("Anda Berhasil Masuk")
+                            setPositiveButton("OK") { _, _ ->
+                                val intent = Intent(this@LoginActivity, HomepageActivity::class.java)
+                                startActivity(intent)
+                                finish()
+                            }
+                            create()
+                            show()
                         }
-                        create()
-                        show()
                     }
+
                 }
                 is Result.Error -> {
                     binding.progressBar.visibility = View.GONE

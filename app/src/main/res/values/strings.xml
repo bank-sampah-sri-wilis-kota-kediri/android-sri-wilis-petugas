@@ -1,6 +1,6 @@
 <resources>
     <!-- Text View  -->
-    <string name="app_name">Bank Sampah Sri Wilis</string>
+    <string name="app_name">Petugas BS Sri Wilis</string>
     <string name="tv_title_splashscreen1">Sampah Jadi Rupiah</string>
     <string name="tv_title_splashscreen2">Transaksi Mudah</string>
     <string name="tv_title_splashscreen3">Proses Realtime</string>

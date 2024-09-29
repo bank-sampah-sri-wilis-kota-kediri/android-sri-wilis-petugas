@@ -27,9 +27,8 @@ interface PesananSampahDao {
     @Update
     suspend fun updatePesananSampah(pesananSampah: PesananSampahEntity)
 
-    // Delete a PesananSampah
-    @Delete
-    suspend fun deletePesananSampah(pesananSampah: PesananSampahEntity)
+    @Query("DELETE FROM pesanan_sampah_table")
+    suspend fun deleteAllPesananSampah()
 
     // Delete all PesananSampah records for a specific DataKeranjang
     @Query("DELETE FROM pesanan_sampah_table WHERE id_pesanan_sampah_keranjang = :idPesananKeranjang")
