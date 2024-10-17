@@ -104,13 +104,6 @@ class HomeFragment : Fragment() {
         }
     }
 
-    override fun onResume() {
-        lifecycleScope.launch {
-            viewModel.syncData()
-            viewModel.getCombinedPesananData()
-        }
-        super.onResume()
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()
