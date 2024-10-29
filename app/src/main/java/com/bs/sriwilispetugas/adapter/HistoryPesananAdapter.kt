@@ -35,7 +35,7 @@ class HistoryPesananAdapter(
                 tvNomorWaPesanan.text = pesanan.no_hp_nasabah
                 tvTanggalPesanan.text = convertDateToText(pesanan.tanggal)
                 val totalBerat = pesanan.total_berat
-                tvBeratTransaksi.text = totalBerat.toString()
+                tvBeratTransaksi.text = totalBerat.toString() + " Kg"
 
                 tvNamaPesanan.text = pesanan.nama_nasabah ?: "Nama tidak ditemukan"
 

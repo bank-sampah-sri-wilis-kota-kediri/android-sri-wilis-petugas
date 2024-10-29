@@ -31,7 +31,7 @@ class PesananAdapter(
             with(binding) {
                 tvNomorWaPesanan.text = pesanan.no_hp_nasabah
                 tvTanggalPesanan.text = convertDateToText(pesanan.tanggal)
-                val totalBerat = pesanan.total_berat
+                val totalBerat = "${pesanan.total_berat} kg"
                 tvBeratTransaksi.text = totalBerat.toString()
 
                 tvNamaPesanan.text = pesanan.nama_nasabah
