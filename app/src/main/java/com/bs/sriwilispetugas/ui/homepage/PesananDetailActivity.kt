@@ -79,8 +79,6 @@ class PesananDetailActivity : AppCompatActivity() {
                             openMaps(detail.lat.toDouble(), detail.lng.toDouble())
                         }
                         binding.tvAlamatDetailPesanan.text = detail.alamat_nasabah
-
-
                     }
                     is Result.Error -> {
                         binding.progressBarDetail.visibility = View.GONE
